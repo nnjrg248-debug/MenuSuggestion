@@ -143,10 +143,10 @@ EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 
 # 送信に使用するGmailアカウント
-EMAIL_HOST_USER = 'nnjrg248@gmail.com'
+EMAIL_HOST_USER ='nnjrg248@gmail.com'#'nnjrg248@yahoo.co.jp'# 'nnjrg248@gmail.com'
 
 # Googleアカウントで発行した「アプリパスワード」を入力します（通常のパスワードではありません）
 EMAIL_HOST_PASSWORD = 'nrfl lhcu dhyy nnke'
 
 # デフォルトの送信元アドレス（任意）
-DEFAULT_FROM_EMAIL = 'from20260414@1q1q.xyz'
+#DEFAULT_FROM_EMAIL = 'fromcl@1q1q.xyz'

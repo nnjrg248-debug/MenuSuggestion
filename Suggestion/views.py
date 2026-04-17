@@ -126,8 +126,9 @@ def test_email_view(request):
     send_mail(
         'AI料理アプリ（テスト）',
         '受け取りました。これから解析します！',
-        'from@example.com',
+        'nnjrg248@gmail.com',
         ['nnjrg248@gmail.com'],
+      #  ['nnjrg248@yahoo.co.jp'],
         fail_silently=False,
     )
     return HttpResponse("テストメールを送信しました。")
