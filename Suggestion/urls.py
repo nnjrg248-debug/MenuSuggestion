@@ -40,5 +40,8 @@ urlpatterns=[
     path('test/', views.test_email_view),
     path('inbound/', views.handle_inbound_email),
     
+<<<<<<< HEAD
     path('handle_inbound_email/', views.handle_inbound_email, name='handle_inbound_email'),
+=======
+>>>>>>> e8b1ef4238dd2f953817dbfe55a01635edbb22a2
 ]
