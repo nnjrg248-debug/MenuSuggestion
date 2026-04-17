@@ -133,27 +133,19 @@ def test_email_view(request):
     )
     return HttpResponse("テストメールを送信しました。")
 
-<<<<<<< HEAD
 # 開発・テスト用の入り口（ブラウザから叩く）
 def test_form_view(request):
     # ブラウザの画面を表示する（写真と文章を選べるようにする）
     return render(request, 'upload_test.html')
-=======
->>>>>>> e8b1ef4238dd2f953817dbfe55a01635edbb22a2
 
 
 
 
 logger = logging.getLogger(__name__) #グローバル変数（外部変数）のようなもの
 
-<<<<<<< HEAD
 
 @csrf_exempt  # SendGridからの外部アクセスを許可
 def handle_inbound_email0(request):
-=======
-@csrf_exempt  # SendGridからの外部アクセスを許可
-def handle_inbound_email(request):
->>>>>>> e8b1ef4238dd2f953817dbfe55a01635edbb22a2
     if request.method == 'POST':
         # 1. データの抽出
         sender = request.POST.get('from')    # 送信者のメールアドレス
@@ -178,7 +170,6 @@ def handle_inbound_email(request):
 
         return HttpResponse(status=200) # SendGridに成功を伝える
    
-<<<<<<< HEAD
     return HttpResponse(status=405)
 
 
@@ -225,5 +216,3 @@ def handle_inbound_email(request):
         )
 
         return HttpResponse(f"AIがレシピを作成し、{sender}宛に送信しました。")
-
-    return HttpResponse(status=405)
