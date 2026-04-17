@@ -40,4 +40,5 @@ urlpatterns=[
     path('test/', views.test_email_view),
     path('inbound/', views.handle_inbound_email),
     
+    path('handle_inbound_email/', views.handle_inbound_email, name='handle_inbound_email'),
 ]

@@ -177,7 +177,7 @@ import google.generativeai as genai
 import os
 
 # Geminiの設定（本来はsettings.pyや環境変数に書くのが安全です）
-genai.configure(api_key="あなたのAPIキー")
+genai.configure(api_key="AIzaSyDiISuhHbd9nFvW153SfGatSOtob8j24zQ")
 model = genai.GenerativeModel('gemini-1.5-flash') # 高速・画像解析可能モデル
 
 @csrf_exempt
